@@ -31,7 +31,7 @@ class Barang extends CI_Controller
         $this->_validasi();
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Barang";
+            $data['title'] = "Item";
             $data['jenis'] = $this->admin->get('jenis');
             $data['satuan'] = $this->admin->get('satuan');
 
@@ -63,7 +63,7 @@ class Barang extends CI_Controller
         $this->_validasi();
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Barang";
+            $data['title'] = "Item";
             $data['jenis'] = $this->admin->get('jenis');
             $data['satuan'] = $this->admin->get('satuan');
             $data['barang'] = $this->admin->get('barang', ['id_barang' => $id]);

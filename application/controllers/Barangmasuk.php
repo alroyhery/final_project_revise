@@ -32,7 +32,7 @@ class Barangmasuk extends CI_Controller
     $this->_validasi();
     
     if ($this->form_validation->run() == false) {
-        $data['title'] = "Barang Masuk";
+        $data['title'] = "Item In";
         $data['supplier'] = $this->admin->get('supplier');
         $data['barang'] = $this->admin->get('barang');
 

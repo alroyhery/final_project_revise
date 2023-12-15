@@ -55,7 +55,7 @@ class User extends CI_Controller
         $this->_validasi('add');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Tambah User";
+            $data['title'] = "Add User";
             $this->template->load('templates/dashboard', 'user/add', $data);
         } else {
             $input = $this->input->post(null, true);

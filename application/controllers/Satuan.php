@@ -29,7 +29,7 @@ class Satuan extends CI_Controller
         $this->_validasi();
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Satuan";
+            $data['title'] = "Unit";
             $this->template->load('templates/dashboard', 'satuan/add', $data);
         } else {
             $input = $this->input->post(null, true);

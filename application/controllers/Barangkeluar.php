@@ -52,7 +52,7 @@ if (is_array($barangData) && array_key_exists('stok', $barangData)) {
     {
         $this->_validasi();
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Barang Keluar";
+            $data['title'] = "Item Out";
             $data['barang'] = $this->admin->get('barang', null, ['stok >' => 0]);
 
             // Mendapatkan dan men-generate kode transaksi barang keluar

@@ -29,7 +29,7 @@ class Jenis extends CI_Controller
         $this->_validasi();
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Jenis";
+            $data['title'] = "Type";
             $this->template->load('templates/dashboard', 'jenis/add', $data);
         } else {
             $input = $this->input->post(null, true);

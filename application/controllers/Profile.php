@@ -101,7 +101,7 @@ class Profile extends CI_Controller
         $this->form_validation->set_rules('konfirmasi_password', 'Konfirmasi Password', 'matches[password_baru]');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Ubah Password";
+            $data['title'] = "Change Password";
             $this->template->load('templates/dashboard', 'profile/ubahpassword', $data);
         } else {
             $input = $this->input->post(null, true);
