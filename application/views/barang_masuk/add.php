@@ -42,7 +42,7 @@
                     <div class="col-md-5">
                         <div class="input-group">
                             <select name="supplier_id" id="supplier_id" class="custom-select">
-                                <option value="" selected disabled>Pilih Supplier</option>
+                                <option value="" selected disabled>Choose Vendor</option>
                                 <?php foreach ($supplier as $s) : ?>
                                     <option <?= set_select('supplier_id', $s['id_supplier']) ?> value="<?= $s['id_supplier'] ?>"><?= $s['nama_supplier'] ?></option>
                                 <?php endforeach; ?>
