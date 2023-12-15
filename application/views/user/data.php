@@ -13,7 +13,7 @@
                         <i class="fa fa-user-plus"></i>
                     </span>
                     <span class="text">
-                        Tambah User
+                        Add User
                     </span>
                 </a>
             </div>
@@ -24,13 +24,13 @@
             <thead>
                 <tr>
                     <th width="30">No.</th>
-                    <th>Foto</th>
-                    <th>Nama</th>
+                    <th>Photo</th>
+                    <th>Name</th>
                     <th>Username</th>
                     <th>Email</th>
-                    <th>No. telp</th>
+                    <th>phone Number</th>
                     <th>Role</th>
-                    <th>Aksi</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -58,7 +58,7 @@
                     <?php endforeach;
                     else : ?>
                     <tr>
-                        <td colspan="8" class="text-center">Silahkan tambahkan user baru</td>
+                        <td colspan="8" class="text-center">Add New User</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
